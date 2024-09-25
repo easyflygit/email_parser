@@ -9,5 +9,5 @@ class EmailAccountAdmin(admin.ModelAdmin):
 
 @admin.register(ParsingRule)
 class ParsingRuleAdmin(admin.ModelAdmin):
-    list_display = ('email_account', 'column_name', 'db_column')
+    list_display = ('email_account', 'excel_column', 'db_column')
 

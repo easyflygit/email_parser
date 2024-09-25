@@ -18,5 +18,5 @@ class ParsingRule(models.Model):
     email_account = models.ForeignKey(EmailAccount,
                                       related_name='parsing_rule',
                                       on_delete=models.CASCADE)
-    column_name = models.CharField(max_length=255)
-    db_column = models.CharField(max_length=255)
+    excel_column = models.IntegerField(help_text="Номер колонки в Excel")
+    db_column = models.CharField(max_length=255, help_text="Поле в БД")
